@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.calciDataSet6 = new calculator.calciDataSet6();
-            this.signBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.signTableAdapter = new calculator.calciDataSet6TableAdapters.signTableAdapter();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usertypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.USERTYPE = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
             this.UPDATE = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.signBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.calciDataSet6 = new calculator.calciDataSet6();
+            this.signTableAdapter = new calculator.calciDataSet6TableAdapters.signTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calciDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.signBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calciDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -65,20 +65,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(942, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // calciDataSet6
-            // 
-            this.calciDataSet6.DataSetName = "calciDataSet6";
-            this.calciDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // signBindingSource
-            // 
-            this.signBindingSource.DataMember = "sign";
-            this.signBindingSource.DataSource = this.calciDataSet6;
-            // 
-            // signTableAdapter
-            // 
-            this.signTableAdapter.ClearBeforeFill = true;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -134,9 +120,23 @@
             this.UPDATE.UseColumnTextForButtonValue = true;
             this.UPDATE.Width = 150;
             // 
+            // signBindingSource
+            // 
+            this.signBindingSource.DataMember = "sign";
+            this.signBindingSource.DataSource = this.calciDataSet6;
+            // 
+            // calciDataSet6
+            // 
+            this.calciDataSet6.DataSetName = "calciDataSet6";
+            this.calciDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // signTableAdapter
+            // 
+            this.signTableAdapter.ClearBeforeFill = true;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(344, 209);
+            this.button1.Location = new System.Drawing.Point(317, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 58);
             this.button1.TabIndex = 1;
@@ -146,7 +146,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(485, 210);
+            this.button2.Location = new System.Drawing.Point(503, 210);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 57);
             this.button2.TabIndex = 2;
@@ -166,8 +166,8 @@
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calciDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.signBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calciDataSet6)).EndInit();
             this.ResumeLayout(false);
 
         }
